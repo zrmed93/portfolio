@@ -27,6 +27,7 @@ text-transform: uppercase;
 .navbar-brand{
   padding: 0px !important;
   height: 100px;
+  max-width: 10rem;
 }
 .navbar-nav > li > a:active, .navbar-nav >li> a:focus {
   border-top: 3px solid 	#FFD700;
@@ -34,4 +35,89 @@ text-transform: uppercase;
 .navbar-nav> li> a:hover{
   border-top: 3px solid 	#FFD700;
 
+}
+.header-wraper{
+  position: relative;
+  background: url(wp5320846.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+
+}
+.main-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family:"Roboto Condensed sans-serif" ;
+
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  z-index: 1;
+  
+  
+  
+}
+.main-info h1 {
+  color: gold;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: rgba(179, 175, 182,0.3);
+  box-shadow: 5px 5px grey;
+
+
+}
+.typed-text{
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 10px;
+
+}
+.btn-main {
+  border: 1px solid black;
+  text-transform: uppercase;
+  padding: 10px 12px 12px 12px;
+  color: rgb(236, 19, 48);
+  margin:2rem;
+  text-decoration: none;
+  font-size: large;
+  background-color: rgb(128, 124, 124,0.5);
+  font-weight: 600;
+
+}
+.btn-main:hover{
+  background-color: rgba(255, 0, 0, 0.747);
+  color: white;
+  transition: .2s ease-in-out;
+}
+
+.tsparticles-canvas-el{
+  z-index: 1;
+  
+  position: absolute;
+}
+nav{
+  z-index: 2;
+}
+@media(max-width:750px) {
+  .canvas{
+    display: none;
+  }
+  .main-info h1 {
+    font-size: 1.7rem;
+  }
+  .typed-text{
+    font-size: 1.2rem;
+  
+  }
+  .navbar-brand{
+    width: 7rem;
+  }
+
+  
 }
